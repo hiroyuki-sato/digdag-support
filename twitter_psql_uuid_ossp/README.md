@@ -1,7 +1,19 @@
+### Environment
+
+* Digdag: 0.9.12
+* OS: macOS 10.12.5
+* PostgreSQL: 9.6.2
+
+###
+
+Create database
+
 
 ```
 create database digdag_support owner digdag;
 ```
+
+Config file
 
 ```
 database.type = postgresql
@@ -12,7 +24,10 @@ database.port = 5432
 database.database = digdag_support
 ```
 
-`digdag server -c postgresql.conf`
+Execute `digdag server -c postgresql.conf`
+
+
+Error log.
 
 ```
 2017-06-14 20:18:46 +0900: Digdag v0.9.12
@@ -100,12 +115,14 @@ Caused by: org.postgresql.util.PSQLException: ERROR: permission denied to create
 	... 60 more
 ```
 
+Execute `create extension` manually.
+
 ```
 \c digdag_support;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
 
-digdag server -c postgresql.conf
+Execute `digdag server -c postgresql.conf` again.
 
 ```
 2017-06-14 20:20:05 +0900: Digdag v0.9.12
