@@ -1,0 +1,12 @@
+
+_export:
+  tables:
+  - table1
+  - table2
+
++embulk:
+  for_each>:
+    table: ${tables} 
+  _do:
+#    sh>: env
+    sh>: ./dummy_embulk.sh
