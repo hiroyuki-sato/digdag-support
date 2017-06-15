@@ -9,4 +9,6 @@ _export:
     table: ${tables} 
   _do:
 #    sh>: env
+#    sh>: embulk run config.yml.liquid
     sh>: ./dummy_embulk.sh
+
