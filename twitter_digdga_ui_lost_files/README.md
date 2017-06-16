@@ -1,4 +1,26 @@
 
+### Server setting
+
+```
+digdag server -m
+```
+
+### Client setting
+
+```
+.
+|-- files.dig
+`-- scripts
+    |-- a.sh
+    |-- b.sh
+    `-- c.sh
+```
+
+```
+digdag push
+```
+
+
 ```yaml
 timezone: "Asia/Tokyo"
 
@@ -13,14 +35,9 @@ timezone: "Asia/Tokyo"
     sh>: ./scripts/c.sh
 ```
 
-```
-.
-|-- files.dig
-`-- scripts
-    |-- a.sh
-    |-- b.sh
-    `-- c.sh
-```
+### access
+
+http://localhost:65432
 
 ![](pic1.png)
 
