@@ -1,0 +1,7 @@
+_export:
+  hello_internal: Hello Internal World
+  !include : 'sub/variables.dig'
+
++run:
+  echo>: ${hello_internal}, ${hello_external}
+
