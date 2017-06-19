@@ -1,0 +1,15 @@
+timezone: 'Asia/Tokyo'
+
++test:
+  require>: hoge
+  
+  session_time: "20170101T00:00:00+0000"
+#  session_time: "2017-01-01T00:00:00+00:00"
+
+#
+#test
+#  session_time: "2017-01-01T00:00:00+0000[Asia/Tokyo]"
+#  session_time: "2011-12-03T10:15:30+01:00[Asia/Tokyo]"
+#  session_time: "2011-12-03T10:15:30+01:00"
+#  session_time: "2011-12-03T10:15:30+01:00"
+
