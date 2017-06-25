@@ -1,0 +1,14 @@
+timezone: Asia/Tokyo
+
++test:
+  sh>: mkdir test
+
++list:
+  sh>: find . -ls
+
++cwd:
+  sh>: pwd
+
++embulk:
+
+  sh>: embulk run parent.yml.liquid
