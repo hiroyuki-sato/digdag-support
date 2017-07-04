@@ -1,0 +1,45 @@
+2017-06-19 19:01:31.256 +0900 [INFO] (main): HikariPool-1 - Started.
+2017-06-19 19:01:31.353 +0900 [INFO] (main): HikariPool-1 - Driver does not support get/set network timeout for connections. (org.postgresql.jdbc.PgConnection.getNetworkTimeout() ?????????????????)
+2017-06-19 19:01:31.408 +0900 [INFO] (main): secret encryption engine: disabled
+2017-06-19 19:01:31.556 +0900 [INFO] (main): XNIO version 3.3.6.Final
+2017-06-19 19:01:31.568 +0900 [INFO] (main): XNIO NIO Implementation Version 3.3.6.Final
+2017-06-19 19:01:31.605 +0900 [INFO] (main): Starting server on 127.0.0.1:65432
+2017-06-19 19:01:31.650 +0900 [INFO] (main): Bound on 127.0.0.1:65432 (api)
+2017-06-19 19:01:35.239 +0900 [INFO] (shutdown): Shutting down workflow executor loop
+2017-06-19 19:01:35.241 +0900 [INFO] (shutdown): Closing HTTP listening sockets
+2017-06-19 19:01:35.244 +0900 [INFO] (shutdown): Waiting for completion of running HTTP requests...
+2017-06-19 19:01:35.244 +0900 [INFO] (shutdown): Shutting down HTTP worker threads
+2017-06-19 19:01:35.245 +0900 [INFO] (shutdown): Shutting down system
+2017-06-19 19:01:35.248 +0900 [INFO] (shutdown): HikariPool-1 - Close initiated...
+2017-06-19 19:01:35.350 +0900 [INFO] (shutdown): HikariPool-1 - Closed.
+2017-06-19 19:01:35.351 +0900 [INFO] (shutdown): Shutdown completed
+2017-06-19 19:02:21.605 +0900 [INFO] (main): HikariPool-1 - Started.
+2017-06-19 19:02:21.699 +0900 [INFO] (main): HikariPool-1 - Driver does not support get/set network timeout for connections. (org.postgresql.jdbc.PgConnection.getNetworkTimeout() メソッドはまだ実装されていません。)
+2017-06-19 19:02:21.756 +0900 [INFO] (main): secret encryption engine: disabled
+2017-06-19 19:02:21.896 +0900 [INFO] (main): XNIO version 3.3.6.Final
+2017-06-19 19:02:21.907 +0900 [INFO] (main): XNIO NIO Implementation Version 3.3.6.Final
+2017-06-19 19:02:21.939 +0900 [INFO] (main): Starting server on 127.0.0.1:65432
+2017-06-19 19:02:21.984 +0900 [INFO] (main): Bound on 127.0.0.1:65432 (api)
+2017-06-19 19:14:48.363 +0900 [INFO] (shutdown): Shutting down workflow executor loop
+2017-06-19 19:14:48.367 +0900 [INFO] (shutdown): Closing HTTP listening sockets
+2017-06-19 19:14:48.370 +0900 [INFO] (shutdown): Waiting for completion of running HTTP requests...
+2017-06-19 19:14:48.370 +0900 [INFO] (shutdown): Shutting down HTTP worker threads
+2017-06-19 19:14:48.371 +0900 [INFO] (shutdown): Shutting down system
+2017-06-19 19:14:48.374 +0900 [INFO] (shutdown): HikariPool-1 - Close initiated...
+2017-06-19 19:14:51.305 +0900 [INFO] (shutdown): HikariPool-1 - Closed.
+2017-06-19 19:14:51.306 +0900 [INFO] (shutdown): Shutdown completed
+2017-06-19 19:18:13.975 +0900 [INFO] (main): HikariPool-1 - Started.
+2017-06-19 19:18:14.064 +0900 [INFO] (main): HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc.PgConnection.getNetworkTimeout() is not yet implemented.)
+2017-06-19 19:18:14.212 +0900 [INFO] (main): secret encryption engine: disabled
+2017-06-19 19:18:14.567 +0900 [INFO] (main): XNIO version 3.3.6.Final
+2017-06-19 19:18:14.586 +0900 [INFO] (main): XNIO NIO Implementation Version 3.3.6.Final
+2017-06-19 19:18:14.644 +0900 [INFO] (main): Starting server on 127.0.0.1:65432
+2017-06-19 19:18:14.709 +0900 [INFO] (main): Bound on 127.0.0.1:65432 (api)
+2017-06-19 19:29:12.705 +0900 [INFO] (shutdown): Shutting down workflow executor loop
+2017-06-19 19:29:12.707 +0900 [INFO] (shutdown): Closing HTTP listening sockets
+2017-06-19 19:29:12.709 +0900 [INFO] (shutdown): Waiting for completion of running HTTP requests...
+2017-06-19 19:29:12.709 +0900 [INFO] (shutdown): Shutting down HTTP worker threads
+2017-06-19 19:29:12.709 +0900 [INFO] (shutdown): Shutting down system
+2017-06-19 19:29:12.712 +0900 [INFO] (shutdown): HikariPool-1 - Close initiated...
+2017-06-19 19:29:13.961 +0900 [INFO] (shutdown): HikariPool-1 - Closed.
+2017-06-19 19:29:13.961 +0900 [INFO] (shutdown): Shutdown completed
