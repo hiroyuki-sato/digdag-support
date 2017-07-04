@@ -28,9 +28,9 @@ digdag server -c postgresql.conf
 2017-07-04 22:04:51 +0900 [INFO] (main): Bound on 127.0.0.1:65432 (api)
 ```
 
-### shorter text
+### shorter and longer secrets
 
-8 characters
+8 characters (`test1234`)
 
 ```
 digdag server -c postgresql.conf
@@ -44,7 +44,7 @@ error: com.google.inject.CreationException: Unable to create injector, see the f
 Caused by: java.lang.IllegalArgumentException: Input byte array has incorrect ending byte at 24
 ```
 
-24 characters
+24 characters (`test1234test1234test1234`)
 
 ```
 digdag server -c postgresql.conf
