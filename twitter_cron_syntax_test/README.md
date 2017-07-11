@@ -53,3 +53,31 @@ Tue Jul 11 11:27:01 JST 2017
 2017-07-11 11:28:00 +0900 [INFO] (0027@[0:hoge]+hoge+hello): sh>: date
 Tue Jul 11 11:28:00 JST 2017
 ```
+
+### without quote
+
+```
+timezone: UTC
+
+schedule:
+  cron>: */1 * * * *  # without quote
+
++hello:
+  sh>: date
+```
+
+```
+digdag push hoge
+2017-07-11 15:17:32 +0900: Digdag v0.9.12
+Creating .digdag/tmp/archive-7977183628803674318.tar.gz...
+error: Validating project failed
+workflow /private/tmp/hoge/hoge.dig while scanning an alias
+ in 'string', line 5, column 10:
+      cron>: */1 * * * *
+             ^
+expected alphabetic or numeric character, but found /
+ in 'string', line 5, column 11:
+      cron>: */1 * * * *
+              ^
+ (model validation)
+```
