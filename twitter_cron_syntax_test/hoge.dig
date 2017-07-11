@@ -1,0 +1,8 @@
+timezone: UTC
+
+schedule:
+  cron>: "*/1 * * * *"
+
++hello:
+  sh>: date
+
