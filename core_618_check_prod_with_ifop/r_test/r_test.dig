@@ -1,0 +1,18 @@
+timezone: UTC
+
+_export:
+  rb:
+    require: scripts/myclass
+
++setup:
+  rb>: MyClass.setenv
+
++step2:
+  sh>: echo ${is_production}
+
++step3:
+  if>: ${is_production}
+
+  _do:
+    echo>: This is production!!
+
