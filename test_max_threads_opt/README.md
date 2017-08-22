@@ -35,6 +35,7 @@ Success. Task state is saved at test_max_threads_opt/.digdag/status/20170822T000
 ## max_threads: unlimited
 
 ```
+digdag run -a fuga
 2017-08-22 20:40:54 +0900: Digdag v0.9.15
 2017-08-22 20:40:55 +0900 [WARN] (main): Reusing the last session time 2017-08-22T00:00:00+00:00.
 2017-08-22 20:40:55 +0900 [INFO] (main): Using session test_max_threads_opt/.digdag/status/20170822T000000+0000.
