@@ -1,0 +1,15 @@
++prepare:
+  +data1:
+    sh>: tasks/prepare_data1.sh
+
+  # +data1 and +data2 run in parallel.
+  +data2:
+    _background: true
+    sh>: tasks/prepare_data2.sh
+
+  # +data3 runs after +data1 and +data2.
+  +data3:
+    sh>: tasks/prepare_data3.sh
+
++analyze:
+    sh>: tasks/analyze_prepared_data_sets.sh
