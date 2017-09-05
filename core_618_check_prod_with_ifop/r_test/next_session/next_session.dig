@@ -1,0 +1,12 @@
+timezone: UTC
+
+schedule:
+  minutes_interval>: 5
+
++setup:
+  sh>: echo start ${session_time}
+
++check_scheduled:
+  if>: ${typeof(next_session_time) == 'undefined'}
+  _do:
+    echo>: It's not scheduled
