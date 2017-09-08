@@ -1,0 +1,12 @@
+_export:
+  workflow_name: workflow1
+
+schedule:
+  minutes_interval>: 5
+  skip_on_overtime: true
+
++testing:
+
+  +job1:
+    sh>: ./1.sh
+
