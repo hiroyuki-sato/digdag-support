@@ -7,7 +7,7 @@
 * Memory: 16GB
 * model name	: Intel(R) Pentium(R) CPU 1403 @ 2.60GHz (lscpu)
 
-## CPU load test
+## CPU load test(brianhks.dig)
 
 ```
 vmstat 2
