@@ -74,6 +74,7 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 ```
 
 ```
+digdag server -m
 2017-09-22 21:57:16 +0900: Digdag v0.9.16
 2017-09-22 21:57:17 +0900 [INFO] (main): secret encryption engine: disabled
 2017-09-22 21:57:18 +0900 [INFO] (main): XNIO version 3.3.6.Final
