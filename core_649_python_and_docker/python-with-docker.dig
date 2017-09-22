@@ -1,0 +1,11 @@
+timezone: UTC
+
+_export:
+  docker:
+    image: python:3
+    
++print_python_version:
+  sh>: python --version
+
++hello:
+  py>: scripts.myclass.MyClass.hello
