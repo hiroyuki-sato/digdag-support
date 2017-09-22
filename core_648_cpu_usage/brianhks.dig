@@ -1,0 +1,13 @@
+timezone: UTC
+
+schedule:
+  minutes_interval>: 1
+
++setup:
+  echo>: start ${session_time}
+
++disp_current_date:
+  echo>: ${moment(session_time).utc().format('YYYY-MM-DD HH:mm:ss Z')}
+
++teardown:
+  echo>: finish ${session_time}
