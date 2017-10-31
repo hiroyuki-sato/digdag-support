@@ -1,0 +1,13 @@
+_export:
+  foo: ${moment(session_date).format('YYYYMMDD')}
+  #foo: test
++run_python:
+  py>: hoge.Hoge.hoge
+  hoge:
+    fuga: ${foo}
+#    fuga2: hogehoge
+#  _env:
+#    hoge: ${foo}
+
++run_shell:
+  sh>: env
