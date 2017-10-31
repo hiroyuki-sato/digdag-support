@@ -9,12 +9,19 @@
 * Digdag 0.9.20
 
 ```
-2017-10-31 09:27:36 +0900: Digdag v0.9.20
-2017-10-31 09:27:38 +0900 [WARN] (main): Reusing the last session time 2017-10-31T00:00:00+00:00.
-2017-10-31 09:27:38 +0900 [INFO] (main): Using session /Users/user/OpenProjects/digdag/digdag-support/twitter_digdag_variable/.digdag/status/20171031T000000+0000.
-2017-10-31 09:27:38 +0900 [INFO] (main): Starting a new session project id=1 workflow name=sample session_time=2017-10-31T00:00:00+00:00
-2017-10-31 09:27:39 +0900 [INFO] (0017@[0:default]+sample+run_python): py>: hoge.Hoge.hoge
+2017-10-31 09:42:09 +0900: Digdag v0.9.20
+2017-10-31 09:42:11 +0900 [WARN] (main): Reusing the last session time 2017-10-31T00:00:00+00:00.
+2017-10-31 09:42:11 +0900 [INFO] (main): Using session /Users/user/OpenProjects/digdag/digdag-support/twitter_digdag_variable/.digdag/status/20171031T000000+0000.
+2017-10-31 09:42:11 +0900 [INFO] (main): Starting a new session project id=1 workflow name=sample session_time=2017-10-31T00:00:00+00:00
+2017-10-31 09:42:13 +0900 [INFO] (0017@[0:default]+sample+run_python): py>: hoge.Hoge.hoge
 {u'fuga': u"${moment(session_date).format('YYYYMMDD')}"}
+20171031
+2017-10-31 09:42:13 +0900 [INFO] (0017@[0:default]+sample+run_shell): sh>: env
+
+foo=20171031
+hoge={"fuga":"${moment(session_date).format('YYYYMMDD')}"}
+hoge2=20171031
+
 Success. Task state is saved at /Users/user/OpenProjects/digdag/digdag-support/twitter_digdag_variable/.digdag/status/20171031T000000+0000 directory.
   * Use --session <daily | hourly | "yyyy-MM-dd[ HH:mm:ss]"> to not reuse the last session time.
   * Use --rerun, --start +NAME, or --goal +NAME argument to rerun skipped tasks.
@@ -26,11 +33,11 @@ Success. Task state is saved at /Users/user/OpenProjects/digdag/digdag-support/t
 * Digdag 0.9.20
 
 ```
-2017-10-31 09:29:06 +0900: Digdag v0.9.20
-2017-10-31 09:29:08 +0900 [WARN] (main): Reusing the last session time 2017-10-31T00:00:00+00:00.
-2017-10-31 09:29:08 +0900 [INFO] (main): Using session /Users/user/OpenProjects/digdag/digdag-support/twitter_digdag_variable/.digdag/status/20171031T000000+0000.
-2017-10-31 09:29:08 +0900 [INFO] (main): Starting a new session project id=1 workflow name=sample session_time=2017-10-31T00:00:00+00:00
-2017-10-31 09:29:10 +0900 [INFO] (0017@[0:default]+sample+run_python): py>: hoge.Hoge.hoge
+2017-10-31 09:44:42 +0900: Digdag v0.9.20
+2017-10-31 09:44:43 +0900 [WARN] (main): Reusing the last session time 2017-10-31T00:00:00+00:00.
+2017-10-31 09:44:43 +0900 [INFO] (main): Using session /Users/user/OpenProjects/digdag/digdag-support/twitter_digdag_variable/.digdag/status/20171031T000000+0000.
+2017-10-31 09:44:43 +0900 [INFO] (main): Starting a new session project id=1 workflow name=sample session_time=2017-10-31T00:00:00+00:00
+2017-10-31 09:44:45 +0900 [INFO] (0017@[0:default]+sample+run_python): py>: hoge.Hoge.hoge
 Traceback (most recent call last):
   File "<stdin>", line 136, in <module>
   File "<stdin>", line 85, in digdag_inspect_command
@@ -38,7 +45,7 @@ Traceback (most recent call last):
     print digdag.env.params['hoge']
                ^
 SyntaxError: Missing parentheses in call to 'print'
-2017-10-31 09:29:10 +0900 [ERROR] (0017@[0:default]+sample+run_python): Task failed with unexpected error: Python command failed with code 1
+2017-10-31 09:44:45 +0900 [ERROR] (0017@[0:default]+sample+run_python): Task failed with unexpected error: Python command failed with code 1
 java.lang.RuntimeException: Python command failed with code 1
 	at io.digdag.standards.operator.PyOperatorFactory$PyOperator.runCode(PyOperatorFactory.java:153)
 	at io.digdag.standards.operator.PyOperatorFactory$PyOperator.runTask(PyOperatorFactory.java:91)
@@ -57,7 +64,7 @@ java.lang.RuntimeException: Python command failed with code 1
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-10-31 09:29:10 +0900 [INFO] (0017@[0:default]+sample^failure-alert): type: notify
+2017-10-31 09:44:46 +0900 [INFO] (0017@[0:default]+sample^failure-alert): type: notify
 error:
   * +sample+run_python:
     Python command failed with code 1 (runtime)

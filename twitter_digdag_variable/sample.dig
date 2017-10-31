@@ -3,6 +3,7 @@ _export:
   #foo: test
 +run_python:
   py>: hoge.Hoge.hoge
+  hoge2: ${foo}
   hoge:
     fuga: ${foo}
 #    fuga2: hogehoge
@@ -11,3 +12,6 @@ _export:
 
 +run_shell:
   sh>: env
+  hoge2: ${foo}
+  hoge:
+    fuga: ${foo}
