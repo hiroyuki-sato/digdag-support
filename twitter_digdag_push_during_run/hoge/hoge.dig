@@ -1,0 +1,10 @@
+timezone: Asia/Tokyo
+
++task1:
+  sh>: echo "task1" ; date
+
++task2:
+  sh>: echo "task2" ; sleep 15 ; date
+
++task3:
+  sh>: echo "task3" ; sleep 10 ; date
