@@ -1,3 +1,7 @@
+_export:
+  rb:
+    require: 'store'
+
 +get_param:
   #  
   # This operator will get the result
@@ -11,16 +15,21 @@
     age: ${JSON.parse(http.last_content).age}
     name: ${JSON.parse(http.last_content).name}
 
-#  +env_test:
-#    sh>: env
-
   +http2nd:
     #  
     # This operator request 'http://localhost:4567/bob/20'
     #
     http>: http://localhost:4567/${name}/${age}
     store_content: true
+  
+  +ruby_test:
+    rb>: MyWorkflow.step1
+
++query2:
+  _export:
+    msg: ${JSON.parse(http.last_content).msg}
 
   +env_test2:
     sh>: env
+#    echo>: ${msg} # ${age}
 

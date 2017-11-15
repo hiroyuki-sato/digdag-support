@@ -1,0 +1,33 @@
+_export:
+  rb:
+    require: 'store'
+
++get_param:
+  #  
+  # This operator will get the result
+  # {"name":"bob","age":20}
+  #
+  +step1:
+    http>: "http://localhost:4567/"
+    store_content: true
+
+  # set age and name parameter.
+  +step2:
+    rb>: MyWorkflow.step1
+
+  # second query with first query result.
+  +step3:
+    #  
+    # This operator request 'http://localhost:4567/bob/20'
+    #
+    http>: http://localhost:4567/${name}/${age}
+    store_content: true
+  
+  # set second parameter
+  +step4:
+    rb>: MyWorkflow.step2
+
+  # echo first and second parameter 
+  +step5:
+    echo>: ${msg} ${age}
+

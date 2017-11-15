@@ -5,6 +5,6 @@ get "/" do
 end
 
 get "/:name/:age" do |name,age|
-  %q!{"msg":"hello #{name} age: #{age}"}!
+  "{\"msg\":\"hello #{name} age: #{age}\"}"
 end
 
