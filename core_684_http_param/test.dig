@@ -1,0 +1,26 @@
++get_param:
+  #  
+  # This operator will get the result
+  # {"name":"bob","age":20}
+  #
+  http>: "http://localhost:4567/"
+  store_content: true
+
++query:
+  _export:
+    age: ${JSON.parse(http.last_content).age}
+    name: ${JSON.parse(http.last_content).name}
+
+#  +env_test:
+#    sh>: env
+
+  +http2nd:
+    #  
+    # This operator request 'http://localhost:4567/bob/20'
+    #
+    http>: http://localhost:4567/${name}/${age}
+    store_content: true
+
+  +env_test2:
+    sh>: env
+
