@@ -5,6 +5,7 @@
 * [prev_task2.dig](prev_task2.dig)
 
 ```
+digdag run sla_task
 2017-11-27 18:51:17 +0900: Digdag v0.9.20
 2017-11-27 18:51:18 +0900 [WARN] (main): Reusing the last session time 2017-11-27T00:00:00+00:00.
 2017-11-27 18:51:18 +0900 [INFO] (main): Using session /private/tmp/test/.digdag/status/20171127T000000+0000.
