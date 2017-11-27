@@ -1,0 +1,10 @@
+timezone: UTC
+
++require1:
+  require>: prev_task1
+  session_time: ${moment().startOf('days').format()}
+
++require2:
+  require>: prev_task2
+  session_time: ${moment().startOf('days').format()}
+

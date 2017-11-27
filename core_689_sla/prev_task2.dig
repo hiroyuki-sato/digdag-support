@@ -1,0 +1,10 @@
+timezone: UTC
+
+sla:
+  duration: 00:00:10
+  +notice:
+    echo>: prev_task2 not finished
+
++task1:
+  sh>: sleep 15 ; echo This is prev_task2
+
