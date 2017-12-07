@@ -13,3 +13,5 @@ timezone: UTC
 
   _parallel: false
 
++task3:
+  echo>: task3
