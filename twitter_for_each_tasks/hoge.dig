@@ -1,0 +1,15 @@
+timezone: UTC
+
++repeat:
+  for_each>:
+    order: [first, second, third]
+    animal: [dog, cat]
+  _do:
+    +task1:
+      echo>: task1 ${order} ${animal}
+
+    +task2:
+      echo>: task2 ${order} ${animal}
+
+  _parallel: false
+
