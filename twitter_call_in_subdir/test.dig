@@ -1,0 +1,5 @@
++hello:
+  echo>: hello
+
++call_test:
+  call>: common/subdir.dig
