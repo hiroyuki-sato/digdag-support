@@ -3,6 +3,7 @@
 1st try
 
 ```
+digdag run testflow
 2018-02-05 14:22:18 +0900: Digdag v0.9.24
 2018-02-05 14:22:19 +0900 [WARN] (main): Using a new session time 2018-02-05T00:00:00+09:00.
 2018-02-05 14:22:19 +0900 [INFO] (main): Using session /path/to/digdag-support/core_728_sh_operator_retry/.digdag/status/20180205T000000+0900.
@@ -49,6 +50,7 @@ Task state is saved at /path/to/digdag-support/core_728_sh_operator_retry/.digda
 
 
 ```
+digdag run testflow
 2018-02-05 14:23:14 +0900: Digdag v0.9.24
 2018-02-05 14:23:16 +0900 [WARN] (main): Reusing the last session time 2018-02-05T00:00:00+09:00.
 2018-02-05 14:23:16 +0900 [INFO] (main): Using session /path/to/digdag-support/core_728_sh_operator_retry/.digdag/status/20180205T000000+0900.
