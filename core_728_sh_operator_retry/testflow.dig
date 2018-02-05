@@ -1,0 +1,14 @@
+timezone: Asia/Tokyo
+
+_error:
+  echo>: Workflow failed.
+
++retrytask:
+  _retry: 5
+
+  +run:
+    sh>: ./test.sh
+
++teardown:
+  echo>: Workflow succeeded.
+
