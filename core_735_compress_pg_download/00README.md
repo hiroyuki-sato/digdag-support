@@ -1,3 +1,27 @@
+```yaml
+_export:
+  pg:
+    database: database
+    host: localhost
+    user: user
+
++step1:
+  sh>: pwd
+    
++step2:
+  pg>: test.sql
+  download_file: test.csv
+
++step3:
+  sh>: pwd
+
++step4:
+  sh>: find ../.. -print
+
++step5:
+  sh>: "( cd ../pg_download+step2* ; gzip test.csv )"
+
+```
 
 Execute `digdag start hoge pg_download --session now`
 
