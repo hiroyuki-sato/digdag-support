@@ -1,0 +1,6 @@
++task:
+  +step1:
+    sh>: pwd
+
+  +step2:
+    sh>: pwd
