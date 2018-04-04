@@ -1,0 +1,7 @@
+pg:
+  host: production
+  port: 5432
+  database: production_db
+  user: production_user
+  ssl: true
+  schema: myschema

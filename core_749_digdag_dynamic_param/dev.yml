@@ -1,0 +1,7 @@
+pg:
+  host: dev
+  port: 5432
+  database: development_db
+  user: development_user
+  ssl: true
+  schema: myschema
