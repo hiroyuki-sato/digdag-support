@@ -1,0 +1,11 @@
+timezone: UTC
+
++setup:
+  sh>: echo start ${session_time}
+
++long_task:
+  sh>: ./long_task.sh
+
++teardown:
+  sh>: echo finish ${session_time}
+
