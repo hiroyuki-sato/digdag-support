@@ -41,6 +41,7 @@ log_msg sleep 8/10
 log_msg sleep 9/10
 log_msg sleep 10/10
 [long task] 2018-04-16 13:16:34 end
+# finish taskが実行されない。
 ```
 
 
