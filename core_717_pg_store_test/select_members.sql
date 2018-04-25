@@ -1,0 +1,1 @@
+select mail from users;

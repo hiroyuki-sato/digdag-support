@@ -1,0 +1,15 @@
+_export:
+  pg:
+    host: localhost
+    database: embulk_test
+    user: user
+
++select_members:
+  pg>: select_members.sql
+  store_last_results: all
+
++echo:
+  for_each>:
+    member: ${pg.last_results}
+  _do:
+    echo>: "member ${member.mail}"
