@@ -1,5 +1,17 @@
 
 ```
+timezone: Asia/Tokyo
+
+schedule:
+  minutes_interval>: 1
+  skip_delayed_by: 30s
+
++say_hello:
+  echo>: start ${session_time}
+```
+
+
+```
 2018-06-04 10:37:24 +0900: Digdag v0.9.25
 2018-06-04 10:37:25 +0900 [INFO] (main): secret encryption engine: disabled
 2018-06-04 10:37:25 +0900 [INFO] (main): XNIO version 3.3.6.Final
@@ -23,7 +35,7 @@ start 2018-06-04T10:39:00+09:00
 2018-06-04 10:39:32 +0900 [INFO] (shutdown): Shutdown completed
 ```
 
-I stopped digdag until 10:53:53. You will see `start 2018-06-04T10:54:00+09:00` only.
+I stopped digdag until 10:53:53. After restart digdag, backfill session created `start 2018-06-04T10:54:00+09:00` only.
 
 
 ```
