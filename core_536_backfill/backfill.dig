@@ -1,0 +1,8 @@
+timezone: Asia/Tokyo
+
+schedule:
+  minutes_interval>: 1
+  skip_delayed_by: 30s
+
++say_hello:
+  echo>: start ${session_time}
