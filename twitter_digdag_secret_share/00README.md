@@ -1,5 +1,5 @@
 
-* [secret.dig](secret.dig)
+* [secret_test.dig](secret_test.dig)
 * [share.dig](common/share.dig)
 
 ```
