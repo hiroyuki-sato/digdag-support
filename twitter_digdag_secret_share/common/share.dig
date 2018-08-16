@@ -1,0 +1,2 @@
+_env:
+  share_secret: ${secret:secret.hoge}
