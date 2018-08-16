@@ -6,6 +6,27 @@
 digdag secrets --local --set secret.hoge=hogehoge
 ```
 
+```yaml
+_export:
+  export_secret: ${secret:secret.hoge}
+
++test1:
+  sh>: echo $export_secret
+
++test2:
+  sh>: echo $share_secret
+  !include : common/share.dig
+
++test3:
+  sh>: echo  $share_secret 2
+  !include : common/share.dig
+```
+
+```yaml
+_env:
+  share_secret: ${secret:secret.hoge}
+```
+
 
 ```
 2018-08-16 12:40:44 +0900: Digdag v0.9.27
