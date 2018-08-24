@@ -12,3 +12,16 @@ workflow1 test1 foo bar
 2018-08-24 18:27:45 +0900 [INFO] (0032@[0:test]+work2+task): echo>: workflow2 test2 foo bar
 workflow2 test2 foo bar
 ```
+
+## work3.dig
+
+```
+digdag run -a work3.dig -P digdag_env_production.yml
+workflow1 production baz
+```
+
+```
+digdag run -a work3.dig -P digdag_env_test.yml
+workflow1 test bar
+```
+
