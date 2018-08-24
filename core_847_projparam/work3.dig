@@ -1,0 +1,9 @@
+_export:
+  rb:
+    require: scripts/load_params
+
++load_parameters:
+  rb>: LoadParams.load
+
++task:
+  echo>: workflow1 ${digdag_env} ${foo}
