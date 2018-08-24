@@ -1,0 +1,6 @@
+_export:
+  local1: test1
+  !include : common/param.dig
+
++task:
+  echo>: workflow1 ${local1} ${param1} ${param2}
