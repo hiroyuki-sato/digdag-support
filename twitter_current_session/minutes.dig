@@ -1,0 +1,10 @@
+timezone: "Asia/Tokyo"
+
+schedule:
+  minutes_interval>: 1
+
++date:
+  sh>: date
+
++task1:
+  echo>: "session_time: ${session_time}, last_session_time: ${last_session_time} next_session_time: ${next_session_time}"
