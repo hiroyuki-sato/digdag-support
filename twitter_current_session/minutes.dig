@@ -7,4 +7,5 @@ schedule:
   sh>: date
 
 +task1:
-  echo>: "session_time: ${session_time}, last_session_time: ${last_session_time} next_session_time: ${next_session_time}"
+#  echo>: "session_time: ${session_time}, last_session_time: ${last_session_time} next_session_time: ${next_session_time}"
+  echo>: "session_local_time: ${session_local_time}, last_session_local_time: ${last_session_local_time} next_session_time: ${next_session_local_time}"
