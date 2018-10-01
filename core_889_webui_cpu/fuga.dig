@@ -1,0 +1,8 @@
+timezone: UTC
+
++test:
+  loop>: 5
+  _parallel: true
+  _do:
+    +task:
+      sh>: ./test.sh
