@@ -1,0 +1,16 @@
+timezone: "Asia/Tokyo"
+
+schedule:
+  minutes_interval>: 1
+
+
++step1:
+  echo>: start schedule ${session_time}
+
++step2:
+  sh>: sleep 30
+
++step3:
+  echo>: finish schedule ${session_time}
+
+
