@@ -16,7 +16,8 @@ _export:
       echo>: ${hoge} # out 20
 
   +step1_2:
-    echo>: ${hoge} # out 10
+    +step1_2_1:
+      echo>: ${hoge} # out 10
 
 +step2:
   _export:
