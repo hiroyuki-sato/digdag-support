@@ -1,0 +1,36 @@
+timezone: "Asia/Tokyo"
+
+_export:
+  rb:
+    require: 'test/var'
+
++step1:
+  _export:
+    hoge: 10
+
+  +step1_1:
+    _export:
+      hoge: 20
+
+    +step1_1_1:
+      echo>: ${hoge} # out 20
+
+  +step1_2:
+    echo>: ${hoge} # out 10
+
++step2:
+  _export:
+    hoge: 10
+
+  +step2_1:
+    echo>: ${hoge} # out 10
+
+  +step2_2:
+    rb>: VarTest.test # hoge replace 30
+
+  +step2_3:
+    echo>: ${hoge} # out 30
+
++step3:
+  echo>: ${hoge} # out 30
+
