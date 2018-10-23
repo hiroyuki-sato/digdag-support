@@ -1,0 +1,11 @@
+timezone: "Asia/Tokyo"
+
+_export:
+  now: ${Date.now()}
+
+
++task1:
+  echo>: ${now}
+
++task2:
+  echo>: ${now}
