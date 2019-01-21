@@ -1,0 +1,11 @@
+
++task1:
+  sh>: env
+  _env:
+    !include : 'sub/env.dig'
+
++task2:
+  sh>: env
+  _env:
+    !include : 'sub/env.dig'
+
