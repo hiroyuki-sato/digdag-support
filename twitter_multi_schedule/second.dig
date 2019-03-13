@@ -1,0 +1,10 @@
+timezone: "Asia/Tokyo"
+
+schedule:
+  hourly>: 42:00
+
++second_task1:
+  echo>: second task1 ${session_time}
+
+  
+

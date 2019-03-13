@@ -1,0 +1,17 @@
+timezone: "Asia/Tokyo"
+
+schedule:
+  hourly>: 44:00
+
++require_wf2:
+  require>: second
+  session_time: 2019-03-13T13:00:00+09:00
+
+#  session_time: 2019-03-13T13:24:00+0900
+#  session_time: 2019-01-13T04:37:00+00:00
+
++first_task1:
+  echo>: first task1 ${session_time}
+
+  
+
