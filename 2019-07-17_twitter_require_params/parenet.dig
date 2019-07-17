@@ -1,0 +1,13 @@
+timezone: Asia/Tokyo
+
+_export:
+  parent_val: foo
+
++start:
+  echo>: start ${session_time} parent
+
++require:
+  require>: child
+  params:
+    hoge: ${parent_val}
+  

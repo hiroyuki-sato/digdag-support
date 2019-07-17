@@ -1,0 +1,9 @@
+timezone: Asia/Tokyo
+
++start:
+  echo>: start ${session_time} child
+
++shell:
+  sh>: env
+  
+
