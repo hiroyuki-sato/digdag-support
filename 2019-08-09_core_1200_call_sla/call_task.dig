@@ -1,0 +1,10 @@
+timezone: UTC
+
+sla:
+  duration: 00:00:10
+  +notice:
+    echo>: call_task not finished
+
++task1:
+  +subtask:
+    sh>: sleep 20 ; echo This is call_task
