@@ -1,0 +1,9 @@
+timezone: Asia/Tokyo
+
++task1:
+  sh>: ./env_test.sh
+
++task2:
+  sh>: env
+
+
