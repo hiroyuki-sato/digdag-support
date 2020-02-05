@@ -1,0 +1,5 @@
+in:
+  type: file
+  path_prefix: '/private/tmp/fuga/csv/sample_'
+out:
+  type: stdout

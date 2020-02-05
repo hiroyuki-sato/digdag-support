@@ -1,0 +1,5 @@
++echo_path_prefix:
+  sh>: env
+
++run_embulk:
+  sh>: embulk run config.yml.liquid
