@@ -56,7 +56,7 @@ path_prefix=/tmp/fuga/csv/sample
 2020-02-05 18:59:16 +0900 [INFO] (0047@[0:fuga]+run_embulk+run_embulk): sh>: embulk run config.yml.liquid
 2020-02-05 18:59:17.530 +0900: Embulk v0.9.23
 2020-02-05 18:59:18.602 +0900 [WARN] (main): DEPRECATION: JRuby org.jruby.embed.ScriptingContainer is directly injected.
-2020-02-05 18:59:21.784 +0900 [INFO] (main): Gem's home and path are set by default: "/Users/hsato/.embulk/lib/gems"
+2020-02-05 18:59:21.784 +0900 [INFO] (main): Gem's home and path are set by default: "/Users/user/.embulk/lib/gems"
 2020-02-05 18:59:25.696 +0900 [INFO] (main): Started Embulk v0.9.23
 2020-02-05 18:59:25.833 +0900 [INFO] (0001:transaction): Listing local files at directory '/tmp/fuga/csv' filtering filename by prefix 'sample'
 2020-02-05 18:59:25.834 +0900 [INFO] (0001:transaction): "follow_symlinks" is set false. Note that symbolic links to directories are skipped.

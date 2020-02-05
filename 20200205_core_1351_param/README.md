@@ -35,7 +35,7 @@ server log output the following
 ...
 
 2020-02-05 17:45:43 +0900 [INFO] (0032@[0:pram_test]+test+task2): sh>: env
-CAML_LD_LIBRARY_PATH=/Users/hsato/.opam/system/lib/stublibs:/usr/local/lib/ocaml/stublibs
+CAML_LD_LIBRARY_PATH=/Users/user/.opam/system/lib/stublibs:/usr/local/lib/ocaml/stublibs
 timezone=Asia/Tokyo
 ...
 AWS_ACCESS_KEY_ID=test <-- OK
