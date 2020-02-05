@@ -1,9 +1,37 @@
 ## client setting 
 
-locate this file to /tmp/fuga
+* locate this directory contents to `/tmp/fuga`
+* exec `diagdag push fuga`
+* access : http://localhost:65432/projects/1/workflows/run_embulk
+* Push run button
 
 
-## with path_prefix
+run_embulk.dig
+
+```yaml
++echo_path_prefix:
+  sh>: env
+
++run_embulk:
+  sh>: embulk run config.yml.liquid
+```
+
+config.yml.liquid
+
+```yaml
+in:
+  type: file
+  path_prefix: {{ env.path_prefix }}
+  decoders:
+  - {type: gzip}
+# snip
+out: {type: stdout}
+
+
+```
+
+
+## with path_prefix environment variables
 
 ```
 % export path_prefix=/tmp/fuga/csv/sample
@@ -44,7 +72,7 @@ path_prefix=/tmp/fuga/csv/sample
 2020-02-05 18:59:26.032 +0900 [INFO] (main): Next config diff: {"in":{"last_path":"/tmp/fuga/csv/sample_01.csv.gz"},"out":{}}
 ```
 
-## without env
+## without env variables
 
 ```
 % unset path_prefix
