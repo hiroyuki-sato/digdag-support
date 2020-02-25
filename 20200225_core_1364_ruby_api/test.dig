@@ -1,0 +1,28 @@
+timezone: UTC
+
+_export:
+  rb:
+    require: scripts/myclass
+
++hoge:
+  rb>: MyClass.env_test
+#
+#+setup:
+#  rb>: MyClass.print_time
+#  label: start
+#  time: ${session_time}
+#
+#+repeat:
+#  for_each>:
+#    order: [first, second, third]
+#    animal: [dog, cat]
+#  _do:
+#    rb>: MyClass.say_something
+#    order: ${order}
+#    animal: ${animal}
+#  _parallel: true
+#
+#+teardown:
+#  rb>: MyClass.print_time
+#  label: finish
+#  time: ${session_time}
