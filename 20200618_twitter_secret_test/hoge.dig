@@ -1,0 +1,7 @@
+timezone: UTC
+
++secret_test1:
+  sh>: echo $foo
+  _env:
+    foo: ${secret:foo}
+
