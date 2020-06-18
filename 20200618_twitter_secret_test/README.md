@@ -7,10 +7,10 @@ digdag.secret-encryption-key = MTZfYnl0ZXNfcGhyYXNlIQ==
 ```
 
 ```
-digdag server -m
+digdag server -m -c digdag.conf
 ```
 
-```
+```yaml
 timezone: UTC
 
 +secret_test1:
