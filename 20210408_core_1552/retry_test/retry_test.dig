@@ -1,0 +1,13 @@
+timezone: UTC
+
++tasks:
+  _retry: 1
+
+  +task_1:
+    echo>: task 1
+  
+#  +task_2:
+#    fail>: task 2
+#
+  +task_2:
+    sh>: ./just_exit_1.sh
