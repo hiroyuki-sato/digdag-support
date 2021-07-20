@@ -1,0 +1,12 @@
++my_test:
+  _parallel: true
+  for_each>:
+    schema: [
+      {
+        file:     "MY-FILE"
+      }
+    ]
+  _do:
+    py>: test_module.test_print
+    _env:
+      MY_SECRET:         ${secret:MY_SECRET}
