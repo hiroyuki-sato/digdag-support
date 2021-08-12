@@ -1,4 +1,7 @@
 
+Digdag 0.10.2 fixed this issue.
+[Release note](http://docs.digdag.io/releases/release-0.10.2.html) 
+
 https://github.com/treasure-data/digdag/issues/1613
 
 ### Prepare Server
