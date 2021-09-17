@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cat <<_EOS_
+[
+  {
+    "id": "001",
+    "name": "item1"
+  },
+  {
+    "id": "002",
+    "name": "item2"
+  }
+]
+
+_EOS_

@@ -1,0 +1,16 @@
+timezone: "Asia/Tokyo"
+
+_export:
+  plugin:
+    repositories:
+      - https://jitpack.io
+    dependencies:
+      - com.github.takemikami:digdag-plugin-shresult:0.0.3
+
++task1:
+  sh_result>: ./hello
+  destination_variable: resultset
+  stdout_format: json-list-map
+
++task2:
+  echo>: ${resultset}
